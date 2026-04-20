@@ -54,3 +54,6 @@ def predict(seq):
 print("\n--- TEST ---")
 print(predict(["INFO start", "WARNING memory high", "ERROR crash"]))
 print(predict(["INFO login", "INFO action", "INFO logout"]))
+
+torch.save(model.state_dict(), "model.pth")
+print("Model saved!")
